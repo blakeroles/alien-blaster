@@ -1,7 +1,5 @@
 require 'src/Dependencies'
 
-local background = love.graphics.newImage('graphics/background_1.png')
-
 function love.load()
 	love.graphics.setDefaultFilter('nearest', 'nearest')
 
@@ -26,7 +24,8 @@ end
 function love.draw()
 	push:start()
 
-	love.graphics.draw(background, 0, 0)
+	love.graphics.setColor(128, 0, 128)
+	love.graphics.rectangle("fill", 0, 0, WINDOW_WIDTH, WINDOW_HEIGHT)
 
 	push:finish()
 end
