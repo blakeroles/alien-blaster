@@ -7,6 +7,7 @@ function love.load()
 
 	love.window.setTitle('Alien Blaster')
 
+	-- screen setup
 	push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, {
 		vsync = true,
 		fullscreen = false,
